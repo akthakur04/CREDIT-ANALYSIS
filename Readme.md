@@ -19,9 +19,6 @@ git clone https://github.com/akthakur04/CREDIT-ANALYSIS.git
 cd backend
 ```
 
-## **backend setup**
----
-
 ### **2. Create a Virtual Environment**
 ```bash
 python -m venv venv
@@ -43,10 +40,10 @@ pip install -r requirements.txt
    uvicorn app:app --reload
    ```
 3. The API will be available at:  
-   **${process.env.REACT_APP_API}**
+   **http://127.0.0.1:8000**
 
 4. You can test the API using Swagger UI:  
-   **${process.env.REACT_APP_API}/docs**
+   **http://127.0.0.1:8000/docs**
 
 ---
 
@@ -267,4 +264,3 @@ Deletes a mortgage record.
 ## **Logging**
 All important actions are logged to `app.log` file.
 
----
