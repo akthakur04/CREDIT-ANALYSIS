@@ -15,9 +15,13 @@ This is a FastAPI-based Mortgage API that allows users to register, authenticate
 ## **Installation**
 ### **1. Clone the Repository**
 ```bash
-git clone <your-repo-url>
-cd mortgage-api
+git clone https://github.com/akthakur04/CREDIT-ANALYSIS.git
+cd backend
+for frontend - cd frontend
 ```
+
+## **backend setup**
+---
 
 ### **2. Create a Virtual Environment**
 ```bash

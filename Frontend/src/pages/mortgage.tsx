@@ -133,7 +133,7 @@ export default function MortgageApp() {
   }
   const fetchMortgages = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/mortgages", {
+      const response = await fetch(`${process.env.REACT_APP_API}/api/mortgages`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -149,7 +149,7 @@ export default function MortgageApp() {
   }
   const DeleteMortage = async (mortgageId: string) => {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/mortgages/${mortgageId}`, {
+      const response = await fetch(`${process.env.REACT_APP_API}/api/mortgages/${mortgageId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -169,7 +169,7 @@ export default function MortgageApp() {
   const handleSubmit = async () => {
     setIsSubmitting(true)
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/mortgages`, {
+      const response = await fetch(`${process.env.REACT_APP_API}/api/mortgages`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

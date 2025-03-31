@@ -14,7 +14,7 @@ const Login: React.FC<LoginProps> = ({ setIsAuthenticated }) => {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const response = await fetch("http://127.0.0.1:8000/api/auth/login", {
+    const response = await fetch(`${process.env.REACT_APP_API}/api/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ "username":username, "password_hash":password_hash }),

@@ -18,7 +18,7 @@ function App() {
       }
 
       try {
-        const response = await fetch("http://127.0.0.1:8000/api/auth/validate", {
+        const response = await fetch(`${process.env.REACT_APP_API}/api/auth/validate`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,

@@ -48,7 +48,7 @@ export default function EditModal({ isOpen, onClose, mortgage, onUpdate }: EditM
     if (!formData) return;
     setIsSubmitting(true);
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/mortgages/${formData.id}`, {
+      const response = await fetch(`${process.env.REACT_APP_API}/api/mortgages/${formData.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
